@@ -8,7 +8,7 @@ This is a packet that have validation with hooks, the proyect was created with t
 ## Example
 
 ```
-import { UseForm } from '../.';
+import { UseForm } from 'js-validation-form';
 ```
 
 

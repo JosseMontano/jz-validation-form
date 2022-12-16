@@ -1,8 +1,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { UseForm } from '../.';
-
+import { UseForm, Button, Input, Label, MsgError, TextArea } from '../.';
 // * the type of the form
 interface FormRecuperateAccount {
   email: string;
@@ -121,19 +120,19 @@ const App = () => {
     <form>
       {dataForm.map((v, i) => (
         <div key={i}>
-          <label>{v.label}</label>
-          <input
+          <Label>{v.label}</Label>
+          <Input
             type="text"
             name={v.name}
             onChange={handleChange}
             value={v.value}
             required
           />
-          {v.errors && <p>{v.errors}</p>}
+          {v.errors && <MsgError>{v.errors}</MsgError>}
         </div>
       ))}
 
-      <button onClick={() => handleSubmit}>Recuperar</button>
+      <Button ColorBtn='#a4bbf5' onClick={() => handleSubmit}>Recuperar</Button>
 
       {loading && <p>LOADING</p>}
       {response && <p>{msg}</p>}
