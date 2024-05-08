@@ -44,7 +44,7 @@ export const TextArea = styled.textarea`
 export const Label = styled.label<{ colorText?: string }>`
   font-size: 22px;
   margin-top: 10px;
-  color: ${props => (props.colorText ? props.colorText : '#fff')};
+  color: ${props => (props.colorText ? props.colorText : '#000')};
 `;
 export const MsgError = styled.p<{ colorText?: string }>`
   font-weight: bold;
