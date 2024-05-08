@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const Button = styled.button<{ ColorBtn: string; ColorTxt?: string }>`
   background-color: ${props => props.ColorBtn};
   color: ${props => (props.ColorTxt ? props.ColorTxt : '#fff')};
-  padding: 1.5rem 2rem;
+  padding: 1rem 1rem;
   border: none;
-  border-radius: 0.2rem;
-  width: 100%;
+  border-radius: 2rem;
+  width: 50%;
   margin-top: 10px;
   font-size: 16px;
   &:hover {
