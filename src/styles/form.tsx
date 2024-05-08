@@ -6,7 +6,7 @@ export const Button = styled.button<{ ColorBtn: string; ColorTxt?: string }>`
   padding: 1rem 1rem;
   border: none;
   border-radius: 2rem;
-  width: 50%;
+  width: 100%;
   margin-top: 10px;
   font-size: 16px;
   &:hover {
