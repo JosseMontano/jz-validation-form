@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Button = styled.button<{ ColorBtn: string; ColorTxt?: string }>`
   background-color: ${props => props.ColorBtn};
   color: ${props => (props.ColorTxt ? props.ColorTxt : '#fff')};
-  padding: 1rem 1rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 2rem;
   width: 100%;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 15px;
   &:hover {
     transform: scale(1.1);
     opacity: 0.9;
